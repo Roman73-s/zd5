@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Задание 5</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <!-- Подключаем скрипт с defer (как требует задание) -->
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <!-- ШАПКА -->
+  <header class="site-header">
+    <div class="container">
+      <div class="row align-items-center py-3">
+        <div class="col-12 col-md-2 text-center text-md-left mb-3 mb-md-0">
+          <a href="#" class="logo-link">
+            <img src="logo.png" alt="Логотип" class="logo">
+          </a>
+        </div>
+        <div class="col-12 col-md-4 text-center text-md-left mb-3 mb-md-0">
+          <h1 class="m-0">ARTEX</h1>
+        </div>
+        <div class="col-12 col-md-6">
+          <nav class="d-flex flex-column flex-md-row justify-content-md-end">
+            <a href="#links" class="nav-link">Ссылки</a>
+            <a href="#table" class="nav-link">Таблица</a>
+            <a href="#form" class="nav-link">Форма</a>
+            <a href="#calc" class="nav-link">Калькулятор</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- КОНТЕНТ -->
+  <main class="container py-4">
+    <div class="row">
+
+      <!-- СПИСОК ГИПЕРССЫЛОК -->
+      <div class="col-12 order-2 order-md-1 mb-4">
+        <section id="links" class="block">
+          <h2>Список гиперссылок</h2>
+          <ul class="links-list">
+            <li><a href="http://kubsu.ru/">КубГУ</a></li>
+            <li><a href="https://kubsu.ru/">КубГУ (https)</a></li>
+            <li>
+              <a href="https://kubsu.ru/">
+                <img src="artex.jpg" alt="ARTEX" width="200">
+              </a>
+            </li>
+            <li><a href="/about">Внутренняя страница</a></li>
+            <li><a href="/">Главная</a></li>
+            <li><a href="#form">К форме</a></li>
+            <li><a href="https://kubsu.ru/?a=1&b=2&c=3">Ссылка с параметрами</a></li>
+            <li><a href="https://kubsu.ru/?id=42">Ссылка с id</a></li>
+            <li><a href="list.html">Страница рядом</a></li>
+            <li><a href="about/list.html">Страница в about</a></li>
+            <li><a href="../list.html">Страница выше</a></li>
+            <li><a href="../../list.html">Страница выше на 2</a></li>
+            <li>
+              <p>Подробнее на <a href="https://kubsu.ru">сайте КубГУ</a>.</p>
+            </li>
+            <li>
+              <a href="https://ru.wikipedia.org/wiki/HTML#История">История HTML</a>
+            </li>
+            <li>
+              <p>Карта ссылок:</p>
+              <img src="artex.jpg" alt="Карта" class="map-img" usemap="#mymap">
+              <map name="mymap">
+                <area shape="rect" coords="0,0,450,280" href="https://kubsu.ru" alt="Символ">
+                <area shape="circle" coords="225,380,80" href="https://yandex.ru" alt="Надпись">
+              </map>
+            </li>
+            <li><a href="">Пустая ссылка</a></li>
+            <li><a>Без href</a></li>
+            <li><a href="https://kubsu.ru" rel="nofollow">nofollow</a></li>
+            <li>
+              <noindex>
+                <a href="https://kubsu.ru">noindex</a>
+              </noindex>
+            </li>
+            <li>
+              <ol>
+                <li><a href="https://kubsu.ru" title="Сайт КубГУ">КубГУ</a></li>
+                <li><a href="https://www.kubsu.ru/ru/education" title="Образование">Образование</a></li>
+                <li><a href="https://www.kubsu.ru/ru/science" title="Наука">Наука</a></li>
+              </ol>
+            </li>
+            <li><a href="ftp://user:pass@example.com/file.zip">FTP с логином</a></li>
+          </ul>
+        </section>
+      </div>
+
+      <!-- ТАБЛИЦА -->
+      <div class="col-12 order-1 order-md-2 mb-4">
+        <section id="table" class="block">
+          <h2>Каталог наушников ARTEX</h2>
+          <div class="table-responsive">
+            <table class="table table-bordered data-table">
+              <tr>
+                <th>№</th>
+                <th>Модель</th>
+                <th>Тип</th>
+                <th>Год</th>
+                <th>Цена (₽)</th>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>ARTEX AX-1</td>
+                <td rowspan="2">Накладные</td>
+                <td>2024</td>
+                <td>12 900</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>ARTEX AX-2 Pro</td>
+                <td>2024</td>
+                <td>18 500</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>ARTEX Pulse</td>
+                <td rowspan="2">Внутриканальные</td>
+                <td>2023</td>
+                <td>7 900</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>ARTEX Pulse Mini</td>
+                <td>2023</td>
+                <td>5 400</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>ARTEX Core</td>
+                <td>Полноразмерные</td>
+                <td>2025</td>
+                <td>24 700</td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>ARTEX 560x Clip-on</td>
+                <td>Клипсы</td>
+                <td>2026</td>
+                <td>37 000</td>
+              </tr>
+              <tr>
+                <td colspan="5">Всего моделей в каталоге: 6</td>
+              </tr>
+            </table>
+          </div>
+        </section>
+      </div>
+
+      <!-- ФОРМА -->
+      <div class="col-12 order-3 mb-4">
+        <section id="form" class="block">
+          <h2>Форма</h2>
+          <form action="" method="post" class="main-form">
+            <div class="form-group">
+              <label for="fio">ФИО:</label>
+              <input type="text" name="fio" id="fio" class="form-control" pattern="^[A-Za-zА-Яа-яЁё\s\-]+$" title="Только буквы, пробелы и дефисы" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Телефон:</label>
+              <input type="tel" name="phone" id="phone" class="form-control" pattern="^[\d+\(\)\s\-]{10,}$" title="Только цифры, +, -, (, ), пробел" autocomplete="off" required>
+            </div>
+            <div class="form-group">
+              <label for="email">E-mail:</label>
+              <input type="email" name="email" id="email" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="birth">Дата рождения:</label>
+              <input type="date" name="birth" id="birth" class="form-control" max="2026-12-31" required>
+            </div>
+            <div class="form-group">
+              <label>Пол:</label><br>
+              <div class="form-check form-check-inline">
+                <input type="radio" name="sex" value="m" id="sex-m" class="form-check-input" required>
+                <label for="sex-m" class="form-check-label">Мужской</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input type="radio" name="sex" value="w" id="sex-w" class="form-check-input">
+                <label for="sex-w" class="form-check-label">Женский</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="lang">Любимый язык программирования:</label>
+              <select name="lang[]" id="lang" multiple class="form-control" size="6">
+                <option value="Pascal">Pascal</option>
+                <option value="C">C</option>
+                <option value="C++">C++</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="PHP">PHP</option>
+                <option value="Python">Python</option>
+                <option value="Java">Java</option>
+                <option value="Haskel">Haskel</option>
+                <option value="Clojure">Clojure</option>
+                <option value="Prolog">Prolog</option>
+                <option value="Scala">Scala</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="bio">Биография:</label>
+              <textarea name="bio" id="bio" rows="5" class="form-control"></textarea>
+            </div>
+            <div class="form-check mb-3">
+              <input type="checkbox" name="ok" id="ok" class="form-check-input" required>
+              <label for="ok" class="form-check-label">С контрактом ознакомлен (а)</label>
+            </div>
+            <button type="submit" class="btn btn-danger">Сохранить</button>
+          </form>
+        </section>
+      </div>
+
+      <!-- КАЛЬКУЛЯТОР (ЛР5) -->
+      <div class="col-12 order-4 mb-4">
+        <section id="calc" class="block">
+          <h2>Калькулятор стоимости заказа</h2>
+
+          <form id="calc-form" class="mt-3">
+            <div class="form-group">
+              <label for="product">Товар:</label>
+              <select id="product" class="form-control">
+                <option value="12900">ARTEX AX-1 — 12 900 ₽</option>
+                <option value="18500">ARTEX AX-2 Pro — 18 500 ₽</option>
+                <option value="7900">ARTEX Pulse — 7 900 ₽</option>
+                <option value="24700">ARTEX Core — 24 700 ₽</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="quantity">Количество:</label>
+              <input type="text" id="quantity" class="form-control" placeholder="Введите число">
+            </div>
+
+            <button type="button" id="calc-btn" class="btn btn-danger">Рассчитать</button>
+          </form>
+
+          <p id="calc-result" class="mt-3 font-weight-bold" style="color: #ffb3b3;"></p>
+          <p id="calc-error" class="mt-1" style="color: #ff6b6b;"></p>
+        </section>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ПОДВАЛ -->
+  <footer class="site-footer">
+    <div class="container py-3 text-center">
+      (c) ARTEX, 2026
+    </div>
+  </footer>
+
+</body>
+
+</html>
