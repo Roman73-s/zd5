@@ -5,16 +5,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>ARTEX — Калькулятор (ЛР5)</title>
-  
-  <!-- Bootstrap и твой стиль -->
+
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="style.css">
   
-  <!-- Подключение скрипта с defer -->
   <script src="script.js" defer></script>
 </head>
 
-<body>
+<body class="d-flex flex-column min-vh-100">
 
   <!-- ШАПКА -->
   <header class="site-header">
@@ -38,10 +36,10 @@
   </header>
 
   <!-- КОНТЕНТ (Калькулятор) -->
-  <main class="container py-4">
+  <main class="container py-4 flex-grow-1">
     <div class="row justify-content-center">
       <div class="col-12 col-md-8 col-lg-6">
-        <section id="calc" class="block">
+        <section id="calc" class="block mt-4">
           <h2>Калькулятор стоимости заказа</h2>
 
           <form id="calc-form" class="mt-3">
