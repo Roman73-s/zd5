@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ARTEX — Калькулятор (ЛР5)</title>
+  
+  <!-- Bootstrap и твой стиль -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Подключение скрипта с defer -->
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <!-- ШАПКА -->
+  <header class="site-header">
+    <div class="container">
+      <div class="row align-items-center py-3">
+        <div class="col-12 col-md-6 text-center text-md-left mb-3 mb-md-0">
+          <a href="index.html" class="logo-link d-inline-block align-middle mr-2">
+            <img src="logo.png" alt="Логотип" class="logo">
+          </a>
+          <h1 class="m-0 d-inline-block align-middle">
+            <a href="index.html" style="color: inherit; text-decoration: none;">ARTEX</a>
+          </h1>
+        </div>
+        <div class="col-12 col-md-6">
+          <nav class="d-flex flex-column flex-md-row justify-content-md-end">
+            <a href="index.html" class="nav-link">← На главную</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- КОНТЕНТ (Калькулятор) -->
+  <main class="container py-4">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-8 col-lg-6">
+        <section id="calc" class="block">
+          <h2>Калькулятор стоимости заказа</h2>
+
+          <form id="calc-form" class="mt-3">
+            <div class="form-group">
+              <label for="product">Товар:</label>
+              <select id="product" class="form-control">
+                <option value="12900">ARTEX AX-1 — 12 900 ₽</option>
+                <option value="18500">ARTEX AX-2 Pro — 18 500 ₽</option>
+                <option value="7900">ARTEX Pulse — 7 900 ₽</option>
+                <option value="24700">ARTEX Core — 24 700 ₽</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="quantity">Количество:</label>
+              <input type="text" id="quantity" class="form-control" placeholder="Введите целое число">
+            </div>
+
+            <button type="button" id="calc-btn" class="btn btn-danger">Рассчитать</button>
+          </form>
+
+          <p id="calc-result" class="mt-3 font-weight-bold" style="color: #ffb3b3; font-size: 20px;"></p>
+          <p id="calc-error" class="mt-1" style="color: #ff6b6b;"></p>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <!-- ПОДВАЛ -->
+  <footer class="site-footer">
+    <div class="container py-3 text-center">
+      (c) ARTEX, 2026
+    </div>
+  </footer>
+
+</body>
+</html>
