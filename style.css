@@ -1,0 +1,167 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #1e1e1e;
+  color: #dcdcdc;
+  line-height: 1.5;
+}
+
+h1, h2 {
+  margin: 0 0 15px 0;
+}
+
+.site-header {
+  width: 100%;
+  background: #7a1f1f;
+  color: #f0f0f0;
+}
+
+.header-inner {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+}
+
+.logo-link {
+  display: block;
+  margin-right: 15px;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #f0f0f0;
+  display: block;
+}
+
+.site-title {
+  flex: 1;
+}
+
+.site-title h1 {
+  font-size: 20px;
+  margin: 0;
+  color: #f0f0f0;
+}
+
+/*меню*/
+.site-nav {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link {
+  color: #f0f0f0;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  color: #ffb3b3;
+  text-decoration: underline;
+}
+
+.content {
+  max-width: 960px;
+  margin: 20px auto;
+  padding: 0 15px;
+}
+
+.block {
+  background: #2a2a2a;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #3a3a3a;
+}
+
+/*СС*/
+.links-list li {
+  margin-bottom: 8px;
+}
+
+.links-list a {
+  color: #e0a0a0;
+  text-decoration: none;
+}
+
+.links-list a:hover {
+  text-decoration: underline;
+  color: #ffb3b3;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  color: #dcdcdc;
+}
+
+.data-table th,
+.data-table td {
+  border: 1px solid #444;
+  padding: 8px 10px;
+  text-align: left;
+}
+
+.data-table th {
+  background: #7a1f1f;
+  color: #f0f0f0;
+}
+
+.data-table tr:nth-child(even) {
+  background: #2a2a2a;
+}
+
+.data-table tr:nth-child(odd) {
+  background: #232323;
+}
+
+
+.form-label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-input,
+.form-select,
+.form-textarea {
+  padding: 5px;
+  border: 1px solid #555;
+  background: #1a1a1a;
+  color: #dcdcdc;
+  font-family: inherit;
+  font-size: 14px;
+  min-width: 250px;
+}
+
+.form-textarea {
+  resize: vertical;
+}
+
+.form-button {
+  padding: 8px 20px;
+  background: #7a1f1f;
+  color: #f0f0f0;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.form-button:hover {
+  background: #a02a2a;
+}
+
+.site-footer {
+  width: 100%;
+  background: #141414;
+  color: #b0b0b0;
+}
+
+.footer-inner {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 15px;
+  text-align: center;
+}
